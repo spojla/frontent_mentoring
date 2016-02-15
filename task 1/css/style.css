@@ -1,3 +1,8 @@
+@font-face {
+font-family: Adobe Gothic Std;
+src: url("../fonts/AdobeGothicStd-Bold.otf") format("opentype");
+}
+
 body {
 	background-color: #3f444e;
 	color: #3f444e;
@@ -21,25 +26,80 @@ a {
   color: #3f444e;
 }
 
-.clear {
-	clear: both;
-}
-
 .wrapper {
 	margin: 0 auto;
-	padding: 0 10px;
 	width: 1194px;
 }
 
-header {
-  height: 76px;
+.section-wrapper {
+	padding: 30px 30px 30px 30px;
+}
+
+header .wrapper{
   background-color:  #ffffff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  height:76px;
 }
 
+#featured-movies .wrapper{
+  background-color:  #ffffff;
+  height:1000px;
+}
+
+
+.col-1{
+  width: calc(100% / 12);
+  float: left;
+}
+
+.col-2{
+  width: calc(100% / 6);
+  float: left;
+}
+
+.col-3{
+  width: calc(100% / 3);
+  float: left;
+}
+
+.col-5{
+  width: calc(100% * 5 / 12);
+  float: left;
+}
+
+.comics1{
+  background: url('../images/comics1.png') no-repeat center;
+}
+
+.game{
+  background: url('../images/game.png') no-repeat center;
+}
+
+.more1{
+  background: url('../images/more1.png') no-repeat center;
+}
+
+.edit-profile{
+  background: url('../images/edit-profile.png') no-repeat center;
+}
+
+nav li a{  
+  width:20px;
+  padding: 0px 20px 0 20px;
+}
+
+nav .user{
+  float:right;
+}
+
+nav ul.user li>*{  
+  padding: 0px 10px 0 10px;
+}
+
+
 header nav {
-	float: right;
+	
 }
 
 header nav ul li {
@@ -51,8 +111,8 @@ header nav ul li {
 .main-image-header{
 	display: block;
   position: absolute;
-  top: 50%;
-  right: 15%;
+  top: 270px;
+  right: 200px;
 }
 
 .main-image-title {
